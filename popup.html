@@ -1,0 +1,165 @@
+
+<!-- <script type="text/javascript" src="jquery-2.0.3.min.js"></script> -->
+
+<style>
+
+    body  {   
+        width: 320px;
+        height: 200px;  
+    }
+
+   /* #bg_image
+    {   position: absolute;
+        z-index: -25;
+        background-image: url('images/icon_128.png');        
+        opacity: 0.05;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }*/
+
+    #content
+    {   padding: 10px;  
+        padding-top: 0px;  }
+
+
+/*---------BLAM---------*/
+    #blam_area {
+        padding: 0px;
+        padding-top: 40px;
+        margin: 0px;
+        height: 150px;
+        width: 100%;
+    }
+
+    #blam, #blam_depth {
+        height: 120px;
+        width: 120px;
+        border-style: solid; 
+        border-radius: 100px;
+    }
+
+    #blam_depth {
+        position: relative;
+        top: 2px;
+        left: 2px;
+        padding: 0px;
+        background-color: #5A0F0F;  
+        border-color: #DDD;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+    }
+
+    #blam_metal {
+        margin: auto;
+        height: 140px;
+        width: 140px;   
+        border-radius: 100px;
+        border-color: #AAA;
+        border-width: 1px;
+        background-color: #DDD;
+    }
+
+
+    #blam  
+    {   position: relative;
+        top: -6px;
+        left: -6px;
+        color: #FFF;
+        font-weight: bold; 
+        border-width: 4px; 
+        background-color: #B50707;  
+        border-color: #B50707;
+        box-shadow: inset -8px -8px 80px rgba(255, 255, 255, 0.2);  }
+
+    #blam.engaged_button {
+        top: -3px;
+        left: -3px;
+    }
+
+
+/*---------Highlight---------*/
+    #highlight_area {
+        /*font-style: italic; */
+        text-align: center;
+        font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    }
+
+    #highlight  {   
+        background-color: rgba(255, 181, 0, 0.3); 
+        border: none;
+        text-decoration: underline;
+        /*font-weight: bold;*/
+        font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+        /*font-style: italic;*/
+        font-size: 15;
+        -webkit-transform: skew(-5deg);
+    }
+
+    #highlight.engaged_button, #highlight:hover
+    {   background-color: rgb(255, 181, 0);  }
+
+/*---------Settings---------*/
+    #settings {
+        display: inline-block;
+        background-image:url('/images/gear.png');
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+        opacity: 0.3;
+    }
+
+    #settings:hover {
+        -webkit-transform: rotate(-20deg);  }
+
+/*---------Help---------*/
+    #help {
+        padding: none;
+        margin: none;
+        position: relative;
+        top: -3px;
+        font-size: 20;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #help:hover {  top: -5px;  }
+</style>
+
+
+
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    
+    
+    <a id='title_bar' href="https://plus.google.com/b/106503008089558999994/106503008089558999994/about?hl=en&service=plus">
+        Black Lister
+        <!-- <div id='bg_image'></div> -->
+    </a>
+    <div id='content'>
+        <div id="blam_area">
+            <div id="blam_metal">
+                <div id="blam_depth">
+                    <button id="blam">BLAM IT</button>
+                </div>
+            </div>
+        </div>
+        <div id="highlight_area">
+            -or-<br>
+            <button id="highlight">Highlight</button><br>
+        </div>
+        <!-- <a href="options.html">See Currently Blacklisted Sites</a><br> -->
+        <a id="settings" href="black_list.html"></a>
+        <a id="help" href="help.html">?</a>
+    </div>
+</body>
+
+
+
+<!-- <script type="text/javascript" src="initialize_theme_list.js"></script> -->
+<script type="text/javascript" src="popup.js"></script>

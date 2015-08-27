@@ -1,0 +1,89 @@
+<link rel="stylesheet" type="text/css" href="popup.css">
+
+<style>
+
+	body  {  
+		padding: 30px;
+		padding-top: 0px;
+		width: 600px;  
+		
+	}
+
+	#content {
+		font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	}
+
+
+	/*#logo {
+		text-align: right;
+		font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+		color: #DDD;
+	    font-size: larger;
+	    font-weight: 200;
+	    font-style: italic;
+	}*/
+
+	#background_image  {
+		position: absolute;
+		height: 515px;
+		width: 600px;
+		z-index: -25;
+		background-repeat: no-repeat;
+	    background-image: url('images/icon_128.png');        
+	    background-position: center;
+	    opacity: 0.05;
+	}
+
+	.red_btn  {
+		color: #F00;
+		font-weight: bold;
+	}
+
+	.bad_link  {	
+		opacity: 0.9; 
+		text-decoration: line-through !important;
+		-webkit-filter: blur(1px) grayscale(70%);
+	}
+
+	.good_link  {
+		background: rgba(255, 181, 0, 0.41);  }
+
+	.rotate {
+		display: inline-block;
+		-webkit-transform: rotate(-2deg);  
+	}
+
+	#the_crap {
+		text-decoration: none;
+		color: #222;
+		font-style: italic;
+	}
+
+</style>
+
+
+<html><body>
+<a id="title_bar" href="popup.html">Black Lister</a>
+
+<div id="content">
+	<div id="background_image"></div>
+	<br><br>
+	This is just a basic Chrome Extension for helping mark the sites you like and don't like.  Of course, there's a little added catharsis with the blowing up the site's you don't, but for the most part, this extension exists to allow users to browse a slightly more welcoming internet.  One where you will only have to be fooled into stumbling across some crappy ad filled page with very little useful information once.  You know the kind?  They usually do "Top Ten" stuff and make you feel like a dunce for accidentally making them money.  Anyways,
+
+	<h2>How to Use</h2>
+	If you don't like a web page, click the <span class="red_btn">big red button</span>.  Links to it will appear <span class="bad_link">fuzzy and grey</span> on all webpages for as long as it is blammed.  Also, the page itself will have a giant mushroom cloud explosion smack dab over the thing.  If you want to us the site anyways, just click the button in the center of the screen that says "view anyways."
+	<br><br>
+	If you do like a web page, <span class="good_link">highlight it.</span>  Links to it will be <span class="good_link">highlighted</span> on other pages.  But not on the page itself, otherwise all it's internal links would be highlighted and that wouldn't look any good.
+
+	<h2>Advanced Users</h2>
+	There is a settings section for advanced users.  In the settings section you can look at either your "Black List" of blammed sites or your "A List" of highlighted sites.  To remove any site from it's list, click the minus button next to it.  To add a site to a list, use the input bar at the top.
+	<br><br>
+	When this app checks links to see if they are to be blammed, highlighted, or left alone it checks if the whole name on the list exists in the link.  For example www.w3schools.org exists in www.w3schools.org/crap.  But if you only wanted the crap page and all subpages to be on a list, you could use a custom list item and narrow down the matching links.  For example 
+	www.w3schools.org/crap does not exist in www.w3schools.org though it does exist in www.w3schools.org/crap/more_crap.
+	<br><br>
+	<br><br>
+	Anyways, Thanks for using the App!  Hope it helps you avoid <a id="the_crap" href="the_crap.html">the crap.</a> <br>
+	<span class="rotate">Seph Reed</span>
+</div>
+
+</body></html>

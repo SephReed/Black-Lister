@@ -1,0 +1,67 @@
+.bad_link
+{	opacity: 0.9; 
+	text-decoration: line-through !important;
+	-webkit-filter: blur(1px) grayscale(70%);
+	/*-webkit-filter: ;*/
+  	/*-moz-filter: blur(1px);*/
+  	/*-o-filter: blur(1px);*/
+  	/*-ms-filter: blur(1px);*/
+  	/*filter: blur(1px);*/
+}
+
+
+
+
+
+.good_link  
+{
+	background: rgba(255, 181, 0, 0.41);
+}
+
+
+
+
+
+#nuke_overlay, #nuke_image  {
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	z-index: 50;
+}
+
+#nuke_overlay {  
+	background-color: rgba(33,15,3,0.96);  }
+
+#nuke_image {
+	background-image:url('chrome-extension://__MSG_@@extension_id__/images/MushroomCloud.png');
+  	background-position: bottom center;
+  	background-size: cover;
+  	opacity: 0.5;
+}
+
+#page_blammed_textbox {
+	  position: fixed;
+	  top: 50%;
+  	left: 50%;
+  	-webkit-transform: translate(-50%, -50%);
+  	/*height: 200;*/
+  	width: 150;
+  	z-index: 50;
+  	padding: 15px;
+  	color: #EEE;
+  	background-color: #000;
+  	border-radius: 30px;
+  	border: solid #224 1px;
+  	box-shadow: 4px 4px 15px #000;
+    text-align: center;
+}
+
+#view_anyways  {
+    background-color: #EEE;
+    color: #222;
+}
+
+
+
